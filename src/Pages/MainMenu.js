@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function MainMenu() {
     return (
-        <div className="layout">
+        <div className="layout" id="root">
             <div className="mainmenu-contents">
                 <h1><center>Labyrinth of Shadows</center></h1>
                 <div className="mainmenu-buttons">
