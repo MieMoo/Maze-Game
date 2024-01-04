@@ -1,38 +1,117 @@
-.App {
+* {
+  color: aliceblue;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+input[type="text"], input[type="color"], button {
+  background-color: black;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.layout {
+  background-color: black;
+  background: url(./Sprites/red-smoke.gif) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  display: flex;
+}
+
+.left-display {
+  background-color: rgba(61, 61, 61, 0.51);
+  height: 100%;
+  width: 22%;
+  position: inherit;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  row-gap: 10px;
+}
+
+.right-display {
+  background-color: rgba(61, 61, 61, 0.51);
+  height: 100%;
+  width: 22%;
+  position: inherit;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  row-gap: 10px;
+  left: 75.5%;
+  font-size: 14.5px;
+  white-space: pre-wrap;
+}
+
+.ui-controller {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  flex-basis: 25%;
+  column-gap: 10px;
+  bottom: 5%;
+  width: 250px;
+  height: 55px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.level-title {
+  size: 16px;
+  color: brown;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.mainmenu-contents {
+  background-color: rgba(61, 61, 61, 0.51);
+  height: 100%;
+  width: 50%;
+  position: inherit;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-basis: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  row-gap: 10px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.App-link {
-  color: #61dafb;
+.mainmenu-buttons {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.instruction {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.instruction-title {
+  text-align: center;
+}
+
+.aboutus-details {
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 12px;
 }
